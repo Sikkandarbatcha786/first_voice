@@ -1,8 +1,10 @@
 streamlit
 openai-whisper
+torch
+gTTS
 groq
-gtts
 reportlab
 pydub
 python-dotenv
 streamlit-mic-recorder
+numpy
