@@ -5,3 +5,4 @@ gtts
 reportlab
 pydub
 python-dotenv
+streamlit-mic-recorder
