@@ -5,7 +5,7 @@ Streamlit Cloud Safe Version
 
 import streamlit as st
 from datetime import datetime
-from streamlit_mic_recorder import mic_recorder
+from streamlit_mic_recorder import mic_recorder  
 
 from voice_input import (
     transcribe,
@@ -68,7 +68,9 @@ if not st.session_state.completed:
     question = INTERVIEW_QUESTIONS[st.session_state.step]
 
     st.subheader(f"Question {st.session_state.step + 1}")
-    st.write(question)
+
+    # ✅ FIX: Show only the English question text
+    st.write(question["english"])
 
     # 🎤 MIC RECORDING
     audio = mic_recorder(
