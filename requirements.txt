@@ -1,0 +1,7 @@
+streamlit
+openai-whisper
+groq
+gtts
+reportlab
+pydub
+python-dotenv
